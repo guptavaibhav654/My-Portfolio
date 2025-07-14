@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <!-- ---------------------------home--------------------------- -->
+    <div class="header " id="home">
+        <div class="container">
+            <nav>
+                <img src="personal-portfolio-img/logo.png" class="logo">
+                
+                <ul id="sidemenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">My Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span> Vaibhav</span>  </h1>
+                <p>I'm a web developer with a passion for creating beautiful and functional websites.</p>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------about--------------------------- -->
+    <div class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="personal-portfolio-img/me.jpg" alt="About Me">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>A highly motivated and skilled developer with proven experience in Java application optimization and front-end development. Expertise in designing, debugging, and implementing Java-based projects, resulting in a 20% improvement in execution speed. Successfully contributed to front-end projects, enhancing user experience through interactive UI components and ensuring on-time project completion within collaborative team environments. Proficient in programming languages including Java, Python, and JavaScript, alongside front-end technologies such as HTML5, CSS3, and Bootstrap. A strong foundation in data structures and algorithms, demonstrated through solving 100+ LeetCode problems and achieving a 4-star rating on Hackerrank. Adept at utilizing tools like VS Code, PyCharm, and IntelliJ, with practical experience in developing full-stack applications, including an ATS-friendly resume builder utilizing LaTeX. Familiar with version control systems such as Git and GitHub. Eager to contribute technical skills and collaborative spirit to drive innovative solutions.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education', event)">Education</p>
+                        <p class="tab-links" onclick="opentab('tab-projects', event)">Achievement</p>
+                        <p class="tab-links" onclick="opentab('skills', event)">Skills</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>NIET</span><br>B.Tech-Computer Science(AI)</li>
+                            <li><span>S.S.V. Inter College</span><br>Intermediate(PCM)</span></li>
+                            <li><span>S.S.V. Inter College</span><br>High School</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Experienced in building responsive web apps using Node.js, JavaScript, HTML, CSS, and LaTeX, with real-time data handling and PDF generation.</li>
+                            <li><span>Data Structure & Algorithm</span><br>Strong problem-solving skills with 100+ DSA problems solved on LeetCode and a 4-star Java rating on HackerRank.</li>
+                            <li><span>Machine Learning & NLP</span><br>Skilled in spam detection and message classification using Naïve Bayes and NLP techniques with Streamlit for real-time visualization.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="tab-projects">
+                        <ul>
+                            <li><span>LeetCode 100+</span><br>Solved 100+ Data Structures and Algorithms problems on LeetCode</li>
+                            <li><span>4-star Hackerrank</span><br>4-star Data Structures and Algorithms with Java on Hackerrank</span></li>
+                            <li><span>DSA-Apna College</span><br>Data Structures and Algorithms in Java with Apna College</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------projects--------------------------- -->
+    <div class="projects" id="projects">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1><br>
+            <h2>PROJECTS</h2>
+                <div class="work-list  ">
+                    <div class="project show-project " >
+                        <img src="personal-portfolio-img/project 1.png" >
+                        <div class="layer">
+                            <h3>ATS-Friendly Resume Builder</h3>
+                            <p>Full-stack web application to generate LaTeX-based, ATS-compliant resume PDFs dynamically.</p>
+                            <a href="https://github.com/guptavaibhav654/ATS-FRIENDLY-RSEUME-BUILDER"><i class="fa fa-external-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="project show-project">
+                        <img src="personal-portfolio-img/project 2.png" >
+                        <div class="layer">
+                            <h3>N-Queen Visulizer</h3>
+                            <p>Interactive visualizer for the N-Queens problem, displaying all distinct solutions for user-input N (up to 20Ö20 board).</p>
+                            <a href="https://guptavaibhav654.github.io/N-Queens-Puzzle/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>    
+                        </div>
+                    </div>
+                    <div class="project show-project">
+                        <img src="personal-portfolio-img/project 3.png" >
+                        <div class="layer">
+                            <h3>Whatsapp Spam Detection</h3>
+                            <p>Spam detection system using Multimodal Navie Bayes Classifier and Deep Learning NLP techniques.</p>   
+                            <a href="https://github.com/guptavaibhav654/Whatsapp-Spam-Detection-using-ML"><i class="fas fa-external-link-alt"></i></a>    
+                        </div>
+                    </div>
+                    <div class="project hidden-project">
+                        <img src="personal-portfolio-img/project 4.png" >
+                        <div class="layer">
+                            <h3>Spotify Landing Page</h3>
+                            <p>A sleek, music-focused landing page inviting users to listen, sign up, or log in to Spotify.</p>   
+                            <a href="https://guptavaibhav654.github.io/Spotify-Landing-Page/"><i class="fas fa-external-link-alt"></i></a>    
+                        </div>
+                    </div>
+                    <div class="project hidden-project">
+                        <img src="personal-portfolio-img/project 5.png" >
+                        <div class="layer">
+                            <h3>Weather-App</h3>
+                            <p>A clean and intuitive landing page providing real-time weather updates, forecasts, and location-based conditions.</p>   
+                            <a href="https://github.com/guptavaibhav654/weather-app/"><i class="fas fa-external-link-alt"></i></a>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-container">
+                <h4 onclick="show_more()" id="load-more">Load More <i class="fa-solid fa-angles-down"></i></h4>
+                <h4 onclick="show_less()" id="load-less" style="display:none;">Load Less <i class="fa-solid fa-angles-up"></i></h4>
+            </div>  
+        </div>
+    </div>
+    <!-- ---------------------------contact--------------------------- -->
+    <div class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p> <i class="fa-solid fa-envelope"></i> work.vaibhav06@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i> +91 7800-180-135</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/vaibhavgupta.654/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/guptavaibhav654/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/guptavaibhav654"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="personal-portfolio-img/Vaibhav_Gupta_Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet" >
+                        <input name="name" type="text" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 <strong>Vaibhav Gupta</strong> | Designed & Developed with <i class="fa-solid fa-code"></i> and <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>  
+</body>
+<script src="script.js"></script>
+</html>
