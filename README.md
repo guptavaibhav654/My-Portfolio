@@ -4,7 +4,7 @@
 This site is hosted on GitHub Pages:
 https://guptavaibhav654.github.io/My-Portfolio/
 
-Welcome to my personal portfolio! I'm **Vaibhav Gupta**, a passionate Full-Stack Developer / Software Engineer based in Gr. Noida. This repo contains my personal website showcasing my skills, projects, and achievements.
+Welcome to my personal portfolio! I'm **Vaibhav Gupta**, a passionate Full-Stack Developer / Software Engineer . This repo contains my personal website showcasing my skills, projects, and achievements.
 
 ## 🌟 Features
 
