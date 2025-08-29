@@ -1,6 +1,6 @@
 # 💼 My Portfolio
 
-🚀 **Live Demo:** [My Portfolio Website](https://guptavaibhav654.github.io/My-Portfolio/)
+🚀 **Live Demo:** [My Portfolio Website](https://guptavaibhav654-portfolio.vercel.app/)
 
 This project is a **personal portfolio website** to showcase my skills, projects, and experience. It's designed to act as a modern, online resume and a professional platform to highlight my work to potential employers or clients.
 
